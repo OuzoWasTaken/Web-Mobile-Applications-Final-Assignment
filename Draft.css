@@ -1004,3 +1004,55 @@ li {
         font-size: 14px;
     }
 }
+
+/* Make images responsive */
+.mySlides img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+/* Adjust gallery container for small screens */
+@media (max-width: 768px) {
+    .gallery-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .slideshow-container {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    /* Reduce arrow button size for smaller screens */
+    .prev, .next {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Ensure text reviews are properly aligned */
+@media (max-width: 768px) {
+    .reviews-container {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .reviews-container p {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Fix button positioning on mobile */
+@media (max-width: 600px) {
+    .prev, .next {
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 12px;
+    }
+}
