@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="Draft.css">
+    <link rel="icon" href="photos/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="Home.html" class="logo">The Gourmet Table</a>
+        <div class="gold-container">
+            <div class="gold-row">
+                <div class="gold-col">
+                    <ul>
+                        <li><a href="Reservation.html">Reservation</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="login.html"><img src="photos/small-logo.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gold Background Container -->
+    <div class="gold-background">
+        <!-- Reservation Form -->
+        <div class="reservation-container">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form" class="input-group">
+                <input type="text" class="input-field" name="name" placeholder="Full Name" required>
+                <input type="email" class="input-field" name="email" placeholder="Email" required>
+                <input type="tel" class="input-field" name="phone" placeholder="Phone Number" required>
+
+                <label for="date">Date:</label>
+                <input type="date" class="input-field" name="date" id="reservationDate" required>
+
+                <label for="time">Time:</label>
+                <input type="time" class="input-field" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <select name="guests" class="input-field" required>
+                    <option value="">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6+">6+</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Reserve</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="PrivacyNPolicy.html">Privacy and Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Methods</h4>
+                    <ul>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set minimum date to today to prevent past date selection
+        document.addEventListener("DOMContentLoaded", function () {
+            let today = new Date().toISOString().split("T")[0];
+            document.getElementById("reservationDate").setAttribute("min", today);
+        });
+
+        // Handle Reservation Form Submission with Popup
+        document.getElementById("reservation-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("✅ Your reservation has been submitted successfully!");
+        });
+    </script>
+
+</body>
+</html>

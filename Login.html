@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="Draft.css">
+    <link rel="icon" href="photos/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="Home.html" class="logo">The Gourmet Table</a>
+        <div class="gold-container">
+            <div class="gold-row">
+                <div class="gold-col">
+                    <ul>
+                        <li><a href="Reservation.html">Reservation</a></li> 
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="login.html"><img src="photos/small-logo.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gold Background Container -->
+    <div class="gold-background">
+        <!-- Login Box -->
+        <div class="login-container">
+            <!-- Toggle Buttons -->
+            <div class="button-box">
+                <button type="button" class="toggle-btn active" id="loginBtn" onclick="showLogin()">Login</button>
+                <button type="button" class="toggle-btn" id="signupBtn" onclick="showSignup()">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" class="input-group">
+                <input type="text" class="input-field" name="username" placeholder="Username" required>
+                <div class="password-container">
+                    <input type="password" class="input-field" name="password" id="loginPassword" placeholder="Password" required>
+                    <i class="fa fa-eye eye-icon" id="loginEyeIcon" onclick="togglePasswordVisibility('loginPassword', 'loginEyeIcon')"></i>
+                </div>
+                <input type="checkbox" class="check-box"> <span>Remember Me</span>
+                <button type="submit" class="submit-btn">Login</button>
+
+                <p id="login_error" class="error-message"></p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" class="input-group hidden">
+                <input type="text" class="input-field" name="name" placeholder="Username" required>
+                <input type="email" class="input-field" name="email" placeholder="Email" required>
+                <div class="password-container">
+                    <input type="password" class="input-field" name="password" id="signupPassword" placeholder="Password" required>
+                    <i class="fa fa-eye eye-icon" id="signupEyeIcon" onclick="togglePasswordVisibility('signupPassword', 'signupEyeIcon')"></i>
+                </div>
+                
+                <div class="password-container">
+                    <input type="password" class="input-field" name="confirm_password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <i class="fa fa-eye eye-icon" id="confirmEyeIcon" onclick="togglePasswordVisibility('confirmPassword', 'confirmEyeIcon')"></i>
+                </div>
+
+                <input type="checkbox" id="termsCheck" class="check-box"> <span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+
+                <p id="signup_error" class="error-message"></p>
+                <p id="signup_success" class="success-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="PrivacyNPolicy.html">Privacy and Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Methods</h4>
+                    <ul>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JV.js"></script>
+    <script src="Login_Script.js"></script>
+</body>
+</html>

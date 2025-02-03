@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="Draft.css">
+    <link rel="icon" href="photos/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="Home.html" class="logo">The Gourmet Table</a>
+        <div class="gold-container">
+            <div class="gold-row">
+                <div class="gold-col">
+                    <ul>
+                        <li><a href="Reservation.html">Reservation</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="login.html"><img src="photos/small-logo.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Articles Section -->
+    <div class="blog-container">
+        <h2>Latest Articles</h2>
+        <div class="slideshow-container" id="articles-slider">
+            <div class="mySlides fade">
+                <p><strong>"The History of Egyptian Cuisine"</strong><br>Discover the ancient flavors and traditions of Egyptian food.</p>
+            </div>
+            <div class="mySlides fade">
+                <p><strong>"Top 5 Spices You Must Try"</strong><br>Enhance your cooking with these essential Middle Eastern spices.</p>
+            </div>
+            <div class="mySlides fade">
+                <p><strong>"The Art of Food Presentation"</strong><br>Tips from expert chefs on making your dishes visually stunning.</p>
+            </div>
+            <a class="prev" onclick="plusBlogSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusBlogSlides(1, 0)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- Recipes Section -->
+    <div class="blog-container">
+        <h2>Delicious Recipes</h2>
+        <div class="slideshow-container" id="recipes-slider">
+            <div class="mySlides fade">
+				<p><strong>"How to Make Authentic Koshari"</strong></p>
+				<ul>
+					<li>1 cup rice</li>
+					<li>1/2 cup brown lentils</li>
+					<li>1/2 cup macaroni</li>
+					<li>1 large onion, sliced</li>
+					<li>1 can (400g) chickpeas</li>
+					<li>2 cups tomato sauce</li>
+					<li>2 cloves garlic, minced</li>
+					<li>1 tsp cumin</li>
+					<li>1/2 tsp chili powder</li>
+					<li>2 tbsp vinegar</li>
+					<li>Salt & pepper to taste</li>
+					<li>Oil for frying</li>
+				</ul>
+			</div>
+
+			<div class="mySlides fade">
+				<p><strong>"Refreshing Sahlab Recipe"</strong></p>
+				<ul>
+					<li>2 cups milk</li>
+					<li>1 tbsp cornstarch</li>
+					<li>2 tbsp sugar</li>
+					<li>1/2 tsp vanilla extract</li>
+					<li>1/2 tsp cinnamon (optional)</li>
+					<li>1 tbsp crushed nuts (pistachios or almonds)</li>
+					<li>1 tbsp shredded coconut</li>
+				</ul>
+			</div>
+
+			<div class="mySlides fade">
+				<p><strong>"Traditional Falafel from Scratch"</strong></p>
+				<ul>
+					<li>1 ½ cups dried chickpeas (soaked overnight)</li>
+					<li>1 small onion, chopped</li>
+					<li>3 cloves garlic, minced</li>
+					<li>1/2 cup fresh parsley</li>
+					<li>1 tsp ground cumin</li>
+					<li>1 tsp ground coriander</li>
+					<li>1/2 tsp baking soda</li>
+					<li>Salt & pepper to taste</li>
+					<li>Oil for frying</li>
+				</ul>
+			</div>
+            <a class="prev" onclick="plusBlogSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusBlogSlides(1, 1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="blog-container">
+        <h2>Upcoming Events</h2>
+        <div class="slideshow-container" id="events-slider">
+            <div class="mySlides fade">
+                <p><strong>"Egyptian Street Food Festival"</strong><br>Join us for a celebration of the best street food in town!</p>
+            </div>
+            <div class="mySlides fade">
+                <p><strong>"Live Cooking Workshop"</strong><br>Learn from professional chefs in this hands-on experience.</p>
+            </div>
+            <div class="mySlides fade">
+                <p><strong>"Annual Gourmet Table Gala"</strong><br>An exclusive fine dining experience with top-tier chefs.</p>
+            </div>
+            <a class="prev" onclick="plusBlogSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusBlogSlides(1, 2)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="PrivacyNPolicy.html">Privacy and Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Methods</h4>
+                    <ul>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JV.js"></script>
+
+</body>
+</html>

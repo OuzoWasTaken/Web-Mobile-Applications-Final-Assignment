@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="Draft.css">
+    <link rel="icon" href="photos/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="Home.html" class="logo">The Gourmet Table</a>
+        <div class="gold-container">
+            <div class="gold-row">
+                <div class="gold-col">
+                    <ul>
+                        <li><a href="Reservation.html">Reservation</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="login.html"><img src="photos/small-logo.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="gallery-container">
+        <!-- Signature Dishes Carousel -->
+        <h2>Our Signature Dishes</h2>
+        <div class="slideshow-container" id="food-slider">
+            <div class="mySlides fade">
+                <img src="photos/Kofta.png" alt="Kofta">
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/Koshari.png" alt="Koshari">
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/Sahlab.png" alt="Sahlab">
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/Tea.png" alt="Tea">
+            </div>
+            <a class="prev" onclick="plusGallerySlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusGallerySlides(1, 0)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <!-- Interior Design Carousel -->
+        <h2>Our Beautiful Interiors</h2>
+        <div class="slideshow-container" id="interior-slider">
+            <div class="mySlides fade">
+                <img src="photos/Hero.png" alt="Interior View 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="photos/Hero2.png" alt="Interior View 2">
+            </div>
+            <a class="prev" onclick="plusGallerySlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusGallerySlides(1, 1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="reviews-container">
+        <h2>What Our Customers Say</h2>
+        <div class="slideshow-container" id="reviews-slider">
+            <div class="mySlides fade">
+                <p>"The best dining experience I've ever had!" - Sarah</p>
+            </div>
+            <div class="mySlides fade">
+                <p>"Authentic Egyptian flavors, just like home!" - Ahmed</p>
+            </div>
+            <div class="mySlides fade">
+                <p>"Beautiful ambiance, delicious food, and excellent service!" - Nora</p>
+            </div>
+            <a class="prev" onclick="plusGallerySlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusGallerySlides(1, 2)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="PrivacyNPolicy.html">Privacy and Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Methods</h4>
+                    <ul>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JV.js"></script>
+
+</body>
+</html>
