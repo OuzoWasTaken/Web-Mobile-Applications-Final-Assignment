@@ -993,7 +993,7 @@ li {
     }
 }
 
-/* ✅ Ensure gallery stays inside gold container */
+/* Adjust gallery stays inside gold container */
 .gallery-container {
     max-width: 80%;
     margin: auto;
@@ -1004,7 +1004,7 @@ li {
     overflow: hidden;
 }
 
-/* ✅ Slideshow container adjustments */
+/* Slideshow container adjustments */
 .slideshow-container {
     max-width: 100%;
     overflow: hidden;
@@ -1012,7 +1012,7 @@ li {
     justify-content: center;
 }
 
-/* ✅ Ensure images fit properly */
+/* Adjust images fit properly */
 .mySlides img {
     max-width: 100%;
     height: auto;
@@ -1020,7 +1020,7 @@ li {
     border-radius: 10px;
 }
 
-/* ✅ Fix navigation button size on small screens */
+/* Adjust navigation button size on small screens */
 @media (max-width: 600px) {
     .prev, .next {
         width: 30px;
@@ -1031,7 +1031,7 @@ li {
     }
 }
 
-/* ✅ Ensure text reviews fit properly */
+/* Adjust text reviews fit properly */
 @media (max-width: 768px) {
     .reviews-container {
         width: 90%;
@@ -1044,7 +1044,7 @@ li {
     }
 }
 
-/* ✅ Adjust image size for larger screens */
+/* Adjust image size for larger screens */
 @media (min-width: 1024px) {
     .gallery-container {
         max-width: 70%;
@@ -1058,4 +1058,9 @@ li {
         max-width: 100%;
         height: auto;
     }
+}
+
+/* Add spacing between gallery sections */
+.gallery-container {
+    margin-bottom: 40px; /* Increase spacing between sections */
 }
