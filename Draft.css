@@ -140,20 +140,6 @@ ul {
     background-color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 767px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 574px) {
-    .footer-col {
-        width: 100%;
-    }
-}
-
 /* Hero */
 .hero-container {
     display: flex;
@@ -403,14 +389,6 @@ body {
     padding: 5px;
     border-radius: 50%;
     z-index: 10;
-}
-
-/* For Misalignment in Smaller Screens */
-@media (max-width: 500px) {
-    .eye-icon {
-        right: 8px;
-        top: calc(100%); 
-    }
 }
 
 /* Checkbox */
@@ -1063,4 +1041,67 @@ li {
 /* Add spacing between gallery sections */
 .gallery-container {
     margin-bottom: 40px; /* Increase spacing between sections */
+}
+
+/* Fix Header for Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 15px; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gold-container {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gold-col ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .gold-col ul li {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .gold-col ul li a {
+        font-size: 14px;
+    }
+}
+
+/* Fix Footer for Mobile */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 14px;
+    }
+
+    .footer-col .social-links a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
 }
