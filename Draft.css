@@ -849,3 +849,158 @@ li {
 .error-message {
     color: red;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .gold-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .gold-col ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gold-col ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        height: auto;
+    }
+
+    .menu-section {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .menu-button {
+        font-size: 40px;
+        padding: 8px 16px;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-container {
+        padding: 10px;
+    }
+
+    .tagline {
+        font-size: 32px;
+    }
+
+    .gold-container {
+        padding: 15px;
+        margin-right: 0;
+    }
+
+    .gold-col ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .category-box {
+        width: 90%;
+    }
+
+    .menu-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .reservation-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-info-container,
+    .contact-form-container,
+    .map-container {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .gold-wrapper {
+        padding: 20px 0;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery-container {
+        max-width: 100%;
+    }
+
+    .reviews-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .blog-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-button {
+        font-size: 30px;
+        padding: 6px 12px;
+    }
+
+    .tagline {
+        font-size: 28px;
+    }
+
+    .gold-container {
+        padding: 10px;
+    }
+
+    .gold-col ul li a {
+        font-size: 14px;
+    }
+
+    .input-field {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .eye-icon {
+        right: 5px;
+        font-size: 14px;
+    }
+}
