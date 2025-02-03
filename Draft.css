@@ -850,99 +850,67 @@ li {
     color: red;
 }
 
-/* Enhanced Responsive Styles */
-
-/* General Mobile Layout Improvements */
+/* Responsive Styles */
 @media (max-width: 1024px) {
     .gold-container {
         flex-direction: column;
         text-align: center;
-        padding: 15px;
     }
-
+    
     .gold-col ul {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
 
     .gold-col ul li {
         display: block;
-    }
-
-    .hero-container {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .hero-image {
-        width: 90%;
-    }
-
-    .menu-section {
-        flex-direction: column;
-        height: auto;
-        padding: 30px 0;
-    }
-
-    .menu-button {
-        font-size: 50px;
-        padding: 12px 24px;
-    }
-
-    .reviews-container, .blog-container {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .footer-col {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 768px) {
     .wrapper {
-        width: 95%;
+        width: 90%;
         height: auto;
     }
 
-    .menu-button {
-        font-size: 36px;
-        padding: 10px 20px;
-    }
-
-    .gold-wrapper {
-        padding: 30px 0;
-    }
-
-    .footer .row {
+    .menu-section {
+        height: auto;
         flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .menu-button {
+        font-size: 40px;
+        padding: 8px 16px;
+    }
+
+    .footer-col {
+        width: 100%;
         text-align: center;
     }
 
-    header {
+    .hero-container {
+        padding: 10px;
+    }
+
+    .tagline {
+        font-size: 32px;
+    }
+
+    .gold-container {
         padding: 15px;
+        margin-right: 0;
+    }
+
+    .gold-col ul {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
-    header ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .gold-col ul li a {
-        font-size: 14px;
-    }
-
-    .reservation-container, 
-    .contact-info-container, 
-    .contact-form-container, 
-    .map-container {
-        max-width: 95%;
-        text-align: center;
-        padding: 20px;
+    .category-box {
+        width: 90%;
     }
 
     .menu-items {
@@ -951,45 +919,66 @@ li {
     }
 
     .menu-item {
-        width: 100%;
+        width: 90%;
         margin-bottom: 15px;
     }
 
-    .hero-container {
-        padding: 15px;
-    }
-
-    .hero-image {
+    .reservation-container {
         width: 100%;
-        max-width: 600px;
+        padding: 20px;
     }
 
-    .tagline {
-        font-size: 28px;
-        margin-bottom: 40px;
-    }
-
-    .gold-container {
-        padding: 10px;
-    }
-
-    .submit-btn {
-        width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-    .menu-button {
-        font-size: 30px;
-        padding: 8px 16px;
+    .contact-info-container,
+    .contact-form-container,
+    .map-container {
+        max-width: 90%;
+        text-align: center;
     }
 
     .gold-wrapper {
         padding: 20px 0;
     }
 
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery-container {
+        max-width: 100%;
+    }
+
+    .reviews-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .blog-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-button {
+        font-size: 30px;
+        padding: 6px 12px;
+    }
+
     .tagline {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .gold-container {
@@ -997,106 +986,21 @@ li {
     }
 
     .gold-col ul li a {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .input-field {
-        padding: 10px;
+        padding: 8px;
         font-size: 14px;
     }
 
     .submit-btn {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .reservation-container, 
-    .contact-info-container, 
-    .contact-form-container, 
-    .map-container {
-        max-width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
-}
-
-/* Mobile Navigation Improvements */
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: center;
         padding: 10px;
-    }
-
-    header ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header ul li {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-}
-
-/* Form & Button Enhancements for Small Screens */
-@media (max-width: 500px) {
-    .reservation-container, 
-    .contact-info-container, 
-    .contact-form-container, 
-    .map-container {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .input-field {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .submit-btn {
-        width: 100%;
-        padding: 12px;
         font-size: 14px;
     }
 
     .eye-icon {
         right: 5px;
         font-size: 14px;
-    }
-}
-
-/* Ensure Images & Text Scale Properly */
-@media (max-width: 450px) {
-    .hero-image {
-        width: 95%;
-    }
-
-    .tagline {
-        font-size: 22px;
-        margin-bottom: 20px;
-    }
-
-    .gold-col ul {
-        flex-direction: column;
-    }
-
-    .gold-col ul li a {
-        font-size: 12px;
-    }
-
-    .input-field {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .submit-btn {
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    .reservation-container h2 {
-        font-size: 20px;
     }
 }
